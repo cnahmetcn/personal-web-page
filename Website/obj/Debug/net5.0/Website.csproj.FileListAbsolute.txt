@@ -397,3 +397,5 @@ C:\Users\daSilva\Desktop\AspNetCore\Website\Website\obj\Debug\net5.0\Website.pdb
 C:\Users\daSilva\Desktop\AspNetCore\Website\Website\obj\Debug\net5.0\Website.genruntimeconfig.cache
 C:\Users\daSilva\Desktop\AspNetCore\Website\Website\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\daSilva\Desktop\AspNetCore\Website\Website\obj\Debug\net5.0\Razor\Views\_viewStart.cshtml.g.cs
+C:\Users\daSilva\Desktop\AspNetCore\Website\Website\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\daSilva\Desktop\AspNetCore\Website\Website\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs

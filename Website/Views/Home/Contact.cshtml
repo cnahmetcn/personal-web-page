@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "İletişim";
+}
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>İletişim</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="Index">
+                                <i class="ion-ios-home"></i>
+                                Anasayfa
+                            </a>
+                        </li>
+                        <li class="active">İletişim</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="block">
+                    <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Mesaj Gönder</h2>
+
+                    <div id="back">
+                        @if (ViewBag.Success != null)
+                        {
+                            <p class="text-success">
+                                Teşekkür ederim. Postacı Yolda :)
+                            </p>
+                        }
+                        @if (ViewBag.Error != null)
+                        {
+                            <p class="text-danger">
+                                Üzgünüm, ne olduğunu bilmiyorum. Daha sonra tekrar deneyin :(
+                            </p>
+                        }
+                    </div>
+
+                    <div class="contact-form">
+                        <form method="post" action="/Home/Contact">
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                <input type="text" placeholder="Adınız" class="form-control" name="Name" id="Name" required>
+                            </div>
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                <input type="text" placeholder="Soyadınız" class="form-control" name="Surname" id="surname" required>
+                            </div>
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                <input type="email" placeholder="Mail Adresiniz" class="form-control" name="Email" id="Email" required>
+                            </div>
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                                <input type="text" placeholder="Konu" class="form-control" name="Subject" id="Subject" required>
+                            </div>
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                <textarea rows="6" placeholder="Mesaj" class="form-control" name="Message" id="Message" required></textarea>
+                            </div>
+
+                            <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Gönder">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="map-area">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199215.8970671012!2d35.3301017516478!3d38.723585291072546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152b0e1d3fa4a74f%3A0x84bd8c4d5a4c2da7!2sKayseri!5e0!3m2!1str!2str!4v1611660174472!5m2!1str!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row address-details">
+            <div class="col-md-4">
+                <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                    <i class="ion-ios-location-outline"></i>
+                    <h5>Kayseri, Türkiye</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+                    <i class="ion-ios-email-outline"></i>
+                    <p><a href="mailto:cnahmet@outlook.com">cnahmet@outlook.com</a> <br /> </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <p>+90 5xx xxx xx xx <br /></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section js{ 
+    <script>
+        setInterval(function () {
+            $("#back").fadeOut(3000);
+        },5000);
+    </script>
+}
