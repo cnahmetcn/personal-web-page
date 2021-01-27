@@ -6337,11 +6337,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daSilva\\Desktop\\AspNetCore\\Website\\Website\\Website.csproj",
+      "projectUniqueName": "C:\\Users\\daSilva\\source\\repos\\personal-web-page\\Website\\Website.csproj",
       "projectName": "Website",
-      "projectPath": "C:\\Users\\daSilva\\Desktop\\AspNetCore\\Website\\Website\\Website.csproj",
+      "projectPath": "C:\\Users\\daSilva\\source\\repos\\personal-web-page\\Website\\Website.csproj",
       "packagesPath": "C:\\Users\\daSilva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daSilva\\Desktop\\AspNetCore\\Website\\Website\\obj\\",
+      "outputPath": "C:\\Users\\daSilva\\source\\repos\\personal-web-page\\Website\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\daSilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
